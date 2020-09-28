@@ -2,37 +2,28 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Handlebars</title>
+    <title>JS Chat App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   </head>
   <body>
+    <div class="container mt-5">
+      <div class="row">
+        <form class="col">
+          <div class="form-group">
+            <label for="message">Message</label>
+            <input type="text" class="form-control" id="message">
+          </div>
+          <div class="form-group">
+            <label for="username">Password</label>
+            <input type="text" class="form-control" id="username">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
 
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col">
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea name="form-control" id="message" rows="3" name="message"></textarea>
-
-        <div class="form-group">
-
-        </div>
-        
-        </div>
+        <ul class="col"></ul>
       </div>
     </div>
-  </div>
 
-  <!-- <script id="message-template" type="text/x-handlebars-template">
-    <div class="entry">
-      <h1>{{message}}</h1>
-    <div class="body">
-      {{username}}
-    </div>
-    </div>
-  </script> -->
-
-    <ul></ul>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js" charset="utf-8"></script>
     <script src="main.js" charset="utf-8"></script>
   </body>
 </html>
